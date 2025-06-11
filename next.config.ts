@@ -6,8 +6,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // Disable default image optimization
   },
-  assetPrefix: isProduction ? "/cv-builder/" : "",
-  basePath: isProduction ? "/cv-builder" : "",
+  assetPrefix: isProduction ? process.env.NEXT_PUBLIC_CDN_PATH : undefined,
+  basePath: isProduction ? process.env.NEXT_PUBLIC_CDN_PATH : undefined,
   output: "export",
 };
 
