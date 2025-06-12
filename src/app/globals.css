@@ -5,12 +5,23 @@
   --foreground: #171717;
 }
 
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #eaeaea transparent;
+}
+
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-vazirmatn), var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+}
+
+@layer base {
+  * {
+    @apply border-slate-200
+  }
 }
 
 @layer utilities {
