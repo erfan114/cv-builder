@@ -2,7 +2,7 @@ import { Button, Result } from "antd";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen flex flex-col justify-center">
+    <div className="h-full flex flex-col justify-center">
       <Result
         status="404"
         title="صفحه یافت نشد"

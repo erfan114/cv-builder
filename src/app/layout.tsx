@@ -1,3 +1,4 @@
+import { AppNavbar } from "@/modules/core/components/AppNavbar";
 import { generateDynamicMetadata } from "@/modules/core/helpers/metadata.helper";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Vazirmatn } from "next/font/google";
@@ -31,8 +32,9 @@ export default function RootLayout({
       dir="rtl"
     >
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${vazirmatn.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${vazirmatn.variable} antialiased min-h-screen h-screen flex flex-col`}
       >
+        <AppNavbar />
         {children}
       </body>
     </html>
