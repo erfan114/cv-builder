@@ -32,7 +32,7 @@ export default function RootLayout({
       dir="rtl"
     >
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${vazirmatn.variable} antialiased min-h-screen h-screen flex flex-col`}
+        className={`${geistSans.variable} ${geistMono.variable} ${vazirmatn.variable} antialiased min-h-screen flex flex-col`}
       >
         <AppNavbar />
         {children}
