@@ -22,7 +22,7 @@ export const HomeHero: FC = () => {
             size="large"
             href={githubPath("/editor")}
           >
-            <span className="font-medium">همین الان شروع کن</span>
+            <span className="font-medium font-sans">همین الان شروع کن</span>
           </Button>
           <Button
             color="blue"
@@ -30,7 +30,9 @@ export const HomeHero: FC = () => {
             size="large"
             href={githubPath("/templates")}
           >
-            <span className="font-medium">مشاهده طرح های پیش فرض</span>
+            <span className="font-medium font-sans">
+              مشاهده طرح های پیش فرض
+            </span>
           </Button>
         </div>
       </div>
