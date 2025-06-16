@@ -1,3 +1,4 @@
+import { githubPath } from "@/modules/core/helpers/github.helper";
 import { Button } from "antd";
 import { Combine } from "lucide-react";
 import { FC } from "react";
@@ -19,7 +20,7 @@ export const HomeHero: FC = () => {
             color="blue"
             variant="outlined"
             size="large"
-            href="/editor"
+            href={githubPath("/editor")}
           >
             <span className="font-medium">همین الان شروع کن</span>
           </Button>
@@ -27,7 +28,7 @@ export const HomeHero: FC = () => {
             color="blue"
             variant="solid"
             size="large"
-            href="/templates"
+            href={githubPath("/templates")}
           >
             <span className="font-medium">مشاهده طرح های پیش فرض</span>
           </Button>

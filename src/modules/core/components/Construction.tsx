@@ -1,6 +1,7 @@
 import { Button } from "antd";
 import { Construction } from "lucide-react";
 import { FC } from "react";
+import { githubPath } from "../helpers/github.helper";
 
 export const UnderConstruction: FC = () => {
   return (
@@ -11,7 +12,7 @@ export const UnderConstruction: FC = () => {
         با عرض تاسف این صفحه در حال توسعه میباشد، لطفا بعدا دوباره تلاش کنید
       </p>
       <Button
-        href="/"
+        href={githubPath("/")}
         variant="filled"
         color="blue"
       >

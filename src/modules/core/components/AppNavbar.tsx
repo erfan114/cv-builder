@@ -1,6 +1,7 @@
 import { Button, Tag } from "antd";
 import { Combine, PencilRuler } from "lucide-react";
 import { FC } from "react";
+import { githubPath } from "../helpers/github.helper";
 
 export const AppNavbar: FC = () => {
   return (
@@ -17,7 +18,7 @@ export const AppNavbar: FC = () => {
         variant="solid"
         color="blue"
         size="large"
-        href="/editor"
+        href={githubPath("/editor")}
         icon={
           <div className="flex items-center">
             <PencilRuler className="text-blue-300" />

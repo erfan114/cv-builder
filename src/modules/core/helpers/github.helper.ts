@@ -5,5 +5,7 @@ export function githubPath(path: string) {
 
   if (!cdnPath || process.env.NODE_ENV !== "production") return path;
 
+  if (path === "/") return cdnPath;
+
   return join(cdnPath, path);
 }
