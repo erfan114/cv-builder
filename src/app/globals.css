@@ -22,6 +22,10 @@ html {
   * {
     @apply border-slate-200 font-sans
   }
+
+  code {
+    @apply font-mono
+  }
 }
 
 @layer utilities {
