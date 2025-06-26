@@ -15,7 +15,7 @@ const Separator: FC = () => (
 
 export const AppFooter: FC = () => {
   return (
-    <div className="flex flex-col font-sans">
+    <div className="flex flex-col">
       <Separator />
       <div className="flex px-5 py-4">
         <div className="flex md:flex-row flex-col md:justify-between flex-1 gap-5 items-center">

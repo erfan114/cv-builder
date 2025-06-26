@@ -5,7 +5,7 @@ import { githubPath } from "../helpers/github.helper";
 
 export const AppNavbar: FC = () => {
   return (
-    <header className="shadow shadow-slate-200 sticky top-0 px-5 py-4 font-sans flex justify-between items-center z-20 bg-white/90 backdrop-blur-md">
+    <header className="shadow shadow-slate-200 sticky top-0 px-5 py-4 flex justify-between items-center z-20 bg-white/90 backdrop-blur-md">
       <div className="flex gap-2.5 items-center">
         <Combine
           className="text-blue-600"
@@ -25,7 +25,7 @@ export const AppNavbar: FC = () => {
           </div>
         }
       >
-        <span className="font-sans font-medium">ویرایشگر</span>
+        <span className="font-medium">ویرایشگر</span>
       </Button>
     </header>
   );

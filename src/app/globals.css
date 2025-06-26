@@ -20,7 +20,7 @@ html {
 
 @layer base {
   * {
-    @apply border-slate-200
+    @apply border-slate-200 font-sans
   }
 }
 

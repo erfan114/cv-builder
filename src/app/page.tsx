@@ -8,7 +8,7 @@ export const metadata: Metadata = generateDynamicMetadata({ pageName: "Home" });
 
 export default function Home() {
   return pageWithFooter(
-    <div className="flex flex-col h-full font-sans p-5 gap-20">
+    <div className="flex flex-col h-full p-5 gap-20">
       <HomeHero />
       <HomeFeatures />
     </div>
