@@ -1,36 +1,141 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CV Builder
 
-## Getting Started
+**CV Builder** is a responsive web application for creating and managing digital CVs/resumes built with [Next.js 15](https://nextjs.org), [React 19](https://react.dev), and [Tailwind CSS](https://tailwindcss.com). It provides a drag-and-drop editor, modular sections, and easy deployment to Vercel or GitHub Pages.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📦 Project Structure
+
+```text
+src/
+├─ app/            # Next.js app router pages and layouts
+│   ├─ editor/     # CV editor page
+│   ├─ layout.tsx  # Root layout
+│   ├─ not-found.tsx
+│   └─ page.tsx    # Home page
+├─ modules/
+│   ├─ core/       # Core logic and utilities
+│   ├─ editor/     # Editor-related components
+│   ├─ home/       # Home page modules
+│   └─ ui          # Reusable UI components (antd, lucide, etc.)
+└─ public/         # Static assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Key Modules
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Module   | Description                                                                   |
+| -------- | ----------------------------------------------------------------------------- |
+| `core`   | Core business logic, state management, and helpers                            |
+| `editor` | Drag-and-drop CV editor using `@dnd-kit/core` and `@xyflow/react`             |
+| `home`   | Prebuilt home section templates                                               |
+| `ui`     | Generic UI components built with `antd`, `lucide-react`, and `tailwind-merge` |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🚀 Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+### Prerequisites
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Node.js](https://nodejs.org/) (>= 20)
+- [pnpm](https://pnpm.io/) (or npm/yarn)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Installation
 
-## Deploy on Vercel
+```bash
+# Clone the repository
+git clone https://github.com/erfan114/cv-builder.git
+cd cv-builder
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Install dependencies
+pnpm install
+# or: npm install
+# or: yarn
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Development
+
+```bash
+pnpm dev
+# or: npm run dev
+# or: yarn dev
+```
+
+The app will be available at [http://localhost:3000](http://localhost:3000).
+
+### Build
+
+```bash
+pnpm build
+# or: npm run build
+# or: yarn build
+```
+
+### Start Production
+
+```bash
+pnpm start
+# or: npm run start
+# or: yarn start
+```
+
+---
+
+## 📡 Available Scripts
+
+| Script   | Description                                           |
+| -------- | ----------------------------------------------------- |
+| `dev`    | Run development server with Turbopack                 |
+| `build`  | Build the Next.js app for production                  |
+| `start`  | Start the production server                           |
+| `lint`   | Lint the codebase with ESLint                         |
+| `deploy` | Deploy to GitHub Pages (`gh-pages -d out --nojekyll`) |
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4, antd component library
+- **UI Icons**: lucide-react
+- **Drag-and-Drop**: `@dnd-kit/core`, `@xyflow/react`
+- **Utilities**: clsx, tailwind-merge
+- **Deployment**: GitHub Pages (via `gh-pages`)
+
+---
+
+## 📦 Deployment
+
+### Vercel (Recommended)
+
+Connect the repository to Vercel and each push will auto-deploy.
+
+### GitHub Pages
+
+```bash
+pnpm deploy
+# or: npm run deploy
+# or: yarn deploy
+```
+
+This builds the app and pushes the `out` directory to the `gh-pages` branch.
+
+---
+
+## 🧩 Project Highlights
+
+- Fully typed with TypeScript
+- Responsive design using Tailwind CSS
+- Modular architecture under `src/modules`
+- Easy to extend with new sections/components
+- Optimized for performance (Next.js image, font optimization)
+- Ready for CI/CD (GitHub Actions compatible)
+
+---
+
+## 🙏 Acknowledgments
+
+- Built with the [Next.js](https://nextjs.org) framework.
+- UI components from [ant Design](https://ant.design) and [lucide](https://lucide.dev).
+- Drag-and-drop powered by `@dnd-kit` and `@xyflow`.
+- Deploy scripts inspired by the [Vercel + GitHub Pages workflow](https://vercel.com/docs/connections/github).
