@@ -30,9 +30,7 @@ export const HomeHero: FC = () => {
             size="large"
             href={githubPath("/templates")}
           >
-            <span className="font-medium">
-              مشاهده طرح های پیش فرض
-            </span>
+            <span className="font-medium">مشاهده طرح های پیش فرض</span>
           </Button>
         </div>
       </div>
@@ -40,7 +38,7 @@ export const HomeHero: FC = () => {
       <div className="flex lg:justify-end lg:flex-1 items-center xl:pl-20 lg:pl-10 md:pl-2 mx-auto z-10">
         <Combine className="text-white lg:size-56 hidden lg:block" />
       </div>
-      <Combine className="absolute lg:left-0 left-1/2 -translate-x-1/2 lg:translate-x-0 top-1/2 -translate-y-1/2 z-0 text-blue-500 size-96 lg:size-[40rem]" />
+      <Combine className="absolute lg:left-0 left-1/2 -translate-x-1/2 lg:translate-x-0 top-1/2 -translate-y-1/2 z-0 text-blue-500 size-72 lg:size-160" />
     </div>
   );
 };
