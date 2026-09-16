@@ -1,4 +1,4 @@
-import { join } from "path";
+import { join } from "node:path";
 
 export function githubPath(path: string) {
   const cdnPath = process.env.NEXT_PUBLIC_CDN_PATH;
