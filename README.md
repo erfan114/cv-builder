@@ -2,6 +2,8 @@
 
 **CV Builder** is a responsive web application for creating and managing digital CVs/resumes built with [Next.js 15](https://nextjs.org), [React 19](https://react.dev), and [Tailwind CSS](https://tailwindcss.com). It provides a drag-and-drop editor, modular sections, and easy deployment to Vercel or GitHub Pages.
 
+The application is designed with a Persian (Farsi) language interface, as indicated by the RTL (right-to-left) layout and localized UI components.
+
 ---
 
 ## 📦 Project Structure
@@ -10,25 +12,32 @@
 src/
 ├─ app/            # Next.js app router pages and layouts
 │   ├─ editor/     # CV editor page
-│   ├─ layout.tsx  # Root layout
+│   ├─ layout.tsx  # Root layout with font providers and metadata
 │   ├─ not-found.tsx
-│   └─ page.tsx    # Home page
+│   ├─ page.tsx    # Home page
+│   └─ templates/  # Prebuilt section templates (Under Construction)
 ├─ modules/
 │   ├─ core/       # Core logic and utilities
-│   ├─ editor/     # Editor-related components
-│   ├─ home/       # Home page modules
+│   │   ├─ components/    # AppLoading, AppNavbar
+│   │   ├─ constants/     # Font definitions (geist, vazirmatn)
+│   │   └─ helpers/       # Metadata, page utilities, GitHub helpers
+│   ├─ editor/     # Editor-related components and hooks
+│   │   ├─ components/    # Toolbar, DragAndDrop, EditArea, sidebars
+│   │   └─ hooks/         # Editor-specific hooks
+│   ├─ home/       # Home page modules and sections
+│   │   ├─ components/    # Hero, Features, FeatureCard
 │   └─ ui          # Reusable UI components (antd, lucide, etc.)
 └─ public/         # Static assets
 ```
 
 ### Key Modules
 
-| Module   | Description                                                                   |
-| -------- | ----------------------------------------------------------------------------- |
-| `core`   | Core business logic, state management, and helpers                            |
-| `editor` | Drag-and-drop CV editor using `@dnd-kit/core` and `@xyflow/react`             |
-| `home`   | Prebuilt home section templates                                               |
-| `ui`     | Generic UI components built with `antd`, `lucide-react`, and `tailwind-merge` |
+| Module   | Description                                                                                    |
+| -------- | ---------------------------------------------------------------------------------------------- |
+| `core`   | Core business logic, state management, helpers, and root components (AppNavbar, AppLoading)    |
+| `editor` | Drag-and-drop CV editor using `@dnd-kit/core` and `@xyflow/react` with sidebar property editor |
+| `home`   | Prebuilt home section templates (Hero, Features, FeatureCard)                                  |
+| `ui`     | Generic UI components built with `antd`, `lucide-react`, and `tailwind-merge`                  |
 
 ---
 
@@ -37,7 +46,7 @@ src/
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) (>= 20)
-- [pnpm](https://pnpm.io/) (or npm/yarn)
+- [pnpm](https://pnpm.io/) (recommended) or npm/yarn
 
 ### Installation
 
@@ -82,13 +91,15 @@ pnpm start
 
 ## 📡 Available Scripts
 
-| Script   | Description                                           |
-| -------- | ----------------------------------------------------- |
-| `dev`    | Run development server with Turbopack                 |
-| `build`  | Build the Next.js app for production                  |
-| `start`  | Start the production server                           |
-| `lint`   | Lint the codebase with ESLint                         |
-| `deploy` | Deploy to GitHub Pages (`gh-pages -d out --nojekyll`) |
+| Script         | Description                                           |
+| -------------- | ----------------------------------------------------- |
+| `dev`          | Run development server with Turbopack                 |
+| `build`        | Build the Next.js app for production                  |
+| `start`        | Start the production server                           |
+| `lint`         | Lint the codebase with ESLint                         |
+| `format`       | Format code with Prettier                             |
+| `format:check` | Check formatting with Prettier                        |
+| `deploy`       | Deploy to GitHub Pages (`gh-pages -d out --nojekyll`) |
 
 ---
 
@@ -120,16 +131,27 @@ pnpm deploy
 
 This builds the app and pushes the `out` directory to the `gh-pages` branch.
 
+**Note**: The project is configured with `homepage: "https://erfan114.github.io/cv-builder"` in package.json for GitHub Pages support.
+
 ---
 
 ## 🧩 Project Highlights
 
-- Fully typed with TypeScript
-- Responsive design using Tailwind CSS
-- Modular architecture under `src/modules`
-- Easy to extend with new sections/components
-- Optimized for performance (Next.js image, font optimization)
-- Ready for CI/CD (GitHub Actions compatible)
+- ✅ Fully typed with TypeScript
+- ✅ Responsive design using Tailwind CSS
+- ✅ Modular architecture under `src/modules` for better maintainability
+- ✅ Easy to extend with new sections/components
+- ✅ RTL (Right-to-Left) support for Persian/Arabic languages
+- ✅ Performance optimized (Next.js image optimization, font optimization)
+- ✅ Ready for CI/CD (GitHub Actions compatible)
+- ✅ Drag-and-drop CV building with `@xyflow/react`
+- ✅ Prebuilt home section templates (Hero, Features)
+
+---
+
+## 👤 Author
+
+**Erfan** - [GitHub](https://github.com/erfan114)
 
 ---
 
@@ -138,4 +160,5 @@ This builds the app and pushes the `out` directory to the `gh-pages` branch.
 - Built with the [Next.js](https://nextjs.org) framework.
 - UI components from [ant Design](https://ant.design) and [lucide](https://lucide.dev).
 - Drag-and-drop powered by `@dnd-kit` and `@xyflow`.
+- Fonts: Geist Mono, Geist Sans, Vazirmatn (Persian font).
 - Deploy scripts inspired by the [Vercel + GitHub Pages workflow](https://vercel.com/docs/connections/github).
