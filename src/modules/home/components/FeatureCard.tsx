@@ -2,13 +2,13 @@ import { cn } from "@/modules/ui/helpers/cn.helper";
 import { LucideIcon } from "lucide-react";
 import { FC, ReactNode } from "react";
 
-interface FeatureCardProps {
+type FeatureCardProps = {
   title: ReactNode;
   description: ReactNode;
   icon: LucideIcon;
   wide?: boolean;
   invert?: boolean;
-}
+};
 
 export const FeatureCard: FC<FeatureCardProps> = ({
   title,
