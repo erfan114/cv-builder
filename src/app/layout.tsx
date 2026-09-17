@@ -1,4 +1,4 @@
-import Loading from "@/modules/core/components/AppLoading";
+import { AppLoading } from "@/modules/core/components/AppLoading";
 import { AppNavbar } from "@/modules/core/components/AppNavbar";
 import {
   geistMonoFont,
@@ -32,7 +32,7 @@ export default function RootLayout({
       >
         <AntdRegistry>
           <ConfigProvider direction="rtl">
-            <Suspense fallback={<Loading />}>
+            <Suspense fallback={<AppLoading />}>
               <AppNavbar />
               {children}
             </Suspense>
