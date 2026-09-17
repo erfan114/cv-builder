@@ -4,10 +4,10 @@ import { FC, useState } from "react";
 import { GlobalHotKeys } from "react-hotkeys";
 import { DropdownItemType } from "./item";
 
-export interface ToolbarDropdownProps {
+export type ToolbarDropdownProps = {
   name: string;
   items: DropdownItemType[];
-}
+};
 
 export const ToolbarDropdown: FC<ToolbarDropdownProps> = ({ name, items }) => {
   const [open, setOpen] = useState(false);
