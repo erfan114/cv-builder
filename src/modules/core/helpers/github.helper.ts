@@ -1,15 +1,15 @@
 import { join } from "node:path";
 
-export function githubPath(path: string) {
-  const cdnPath = process.env.NEXT_PUBLIC_CDN_PATH;
+const CDN_PATH = process.env.NEXT_PUBLIC_CDN_PATH;
 
-  if (!cdnPath || process.env.NODE_ENV !== "production") {
+export function githubPath(path: string) {
+  if (!CDN_PATH || process.env.NODE_ENV !== "production") {
     return path;
   }
 
   if (path === "/") {
-    return cdnPath;
+    return CDN_PATH;
   }
 
-  return join(cdnPath, path);
+  return join(CDN_PATH, path);
 }
