@@ -9,10 +9,7 @@ export const EditorComponentsSidebar: FC = () => {
         dir="ltr"
       >
         {Array.from({ length: 20 }).map((_, i) => (
-          <DraggableComponent
-            id={`c-${i}`}
-            key={i}
-          />
+          <DraggableComponent id={`c-${i}`} key={i} />
         ))}
       </div>
     </div>

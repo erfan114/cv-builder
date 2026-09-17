@@ -8,7 +8,11 @@ export const HelpTools: FC = () => {
       name="کمک"
       items={[
         buttonDropdownItem("آموزش بخش ها", "welcome", () => {}),
-        buttonDropdownItem("استفاده از رزومه های پیشفرض", "how-to-use", () => {}),
+        buttonDropdownItem(
+          "استفاده از رزومه های پیشفرض",
+          "how-to-use",
+          () => {},
+        ),
       ]}
     />
   );

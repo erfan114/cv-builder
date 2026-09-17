@@ -4,14 +4,11 @@ export const buttonDropdownItem = (
   label: string,
   key: string,
   handler: () => void,
-  options?: DropdownItemOptions
+  options?: DropdownItemOptions,
 ): DropdownItemType => {
   return {
     label: (
-      <DropdownItemLabel
-        shortcut={options?.shortcut}
-        key={key}
-      >
+      <DropdownItemLabel shortcut={options?.shortcut} key={key}>
         {label}
       </DropdownItemLabel>
     ),
@@ -26,15 +23,11 @@ export const toggleDropdownItem = (
   key: string,
   state: boolean,
   onChange: (requestedState: boolean) => void,
-  options?: DropdownItemOptions
+  options?: DropdownItemOptions,
 ): DropdownItemType => {
   return {
     label: (
-      <DropdownItemLabel
-        shortcut={options?.shortcut}
-        checked={state}
-        key={key}
-      >
+      <DropdownItemLabel shortcut={options?.shortcut} checked={state} key={key}>
         {label}
       </DropdownItemLabel>
     ),

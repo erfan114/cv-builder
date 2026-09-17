@@ -8,10 +8,7 @@ export default function NotFound() {
         title="صفحه یافت نشد"
         subTitle="شرمنده اما صفحه ای که شما به دنبال آن هستید وجود ندارد"
         extra={
-          <Button
-            type="primary"
-            href="/"
-          >
+          <Button type="primary" href="/">
             بازگشت به خانه
           </Button>
         }

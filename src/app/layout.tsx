@@ -21,16 +21,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      dir="rtl"
-    >
+    <html lang="en" dir="rtl">
       <body
         className={cn(
           `antialiased h-screen flex flex-col`,
           geistSansFont.variable,
           geistMonoFont.variable,
-          vazirmatnFont.variable
+          vazirmatnFont.variable,
         )}
       >
         <AntdRegistry>

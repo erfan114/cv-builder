@@ -22,14 +22,14 @@ export const FeatureCard: FC<FeatureCardProps> = ({
       className={cn(
         "shadow rounded-lg p-3 border md:col-span-4 col-span-8",
         wide ? "lg:col-span-5" : "lg:col-span-3",
-        invert ? "bg-blue-600" : "bg-white"
+        invert ? "bg-blue-600" : "bg-white",
       )}
     >
       <div className="flex gap-3 items-center">
         <div
           className={cn(
             "rounded-full aspect-square size-12 flex items-center justify-center",
-            invert ? "bg-white" : "bg-blue-600"
+            invert ? "bg-white" : "bg-blue-600",
           )}
         >
           <Icon className={cn(invert ? "text-blue-600" : "text-white")} />
@@ -37,7 +37,7 @@ export const FeatureCard: FC<FeatureCardProps> = ({
         <h4
           className={cn(
             "font-medium text-lg",
-            invert ? "text-white" : "text-black"
+            invert ? "text-white" : "text-black",
           )}
         >
           {title}

@@ -7,6 +7,6 @@ export default function Home() {
     <div className="flex flex-col h-full p-5 gap-20">
       <HomeHero />
       <HomeFeatures />
-    </div>
+    </div>,
   );
 }

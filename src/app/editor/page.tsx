@@ -30,11 +30,7 @@ export default function Editor() {
             <Splitter.Panel className="flex">
               <EditorEditArea />
             </Splitter.Panel>
-            <Splitter.Panel
-              min={"15%"}
-              defaultSize={"20%"}
-              max={"20%"}
-            >
+            <Splitter.Panel min={"15%"} defaultSize={"20%"} max={"20%"}>
               <EditorPropertiesSidebar />
             </Splitter.Panel>
           </Splitter>

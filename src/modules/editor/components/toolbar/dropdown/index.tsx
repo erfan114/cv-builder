@@ -40,19 +40,11 @@ export const ToolbarDropdown: FC<ToolbarDropdownProps> = ({ name, items }) => {
           items: normalizedItems,
         }}
       >
-        <Button
-          type="text"
-          variant="text"
-          size="small"
-        >
+        <Button type="text" variant="text" size="small">
           {name}
         </Button>
       </Dropdown>
-      <GlobalHotKeys
-        keyMap={keyMap}
-        handlers={keyHandlers}
-        allowChanges
-      />
+      <GlobalHotKeys keyMap={keyMap} handlers={keyHandlers} allowChanges />
     </>
   );
 };

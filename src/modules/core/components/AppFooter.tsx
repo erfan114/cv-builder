@@ -5,10 +5,7 @@ import { FC } from "react";
 const Separator: FC = () => (
   <div className="flex items-center gap-3">
     <hr className="flex-1" />
-    <Combine
-      className="text-blue-600"
-      size={20}
-    />
+    <Combine className="text-blue-600" size={20} />
     <hr className="flex-1" />
   </div>
 );
@@ -21,10 +18,7 @@ export const AppFooter: FC = () => {
         <div className="flex md:flex-row flex-col md:justify-between flex-1 gap-5 items-center">
           <div className="flex flex-col md:items-start items-center">
             <div className="flex gap-2 items-center">
-              <Combine
-                className="text-blue-600 hidden md:block"
-                size={24}
-              />
+              <Combine className="text-blue-600 hidden md:block" size={24} />
               <h3 className="text-lg">رزومه ساز</h3>
             </div>
             <p className="text-sm leading-relaxed">

@@ -15,7 +15,7 @@ export const EditTools: FC = () => {
           },
           {
             shortcut: "Shift+U",
-          }
+          },
         ),
         buttonDropdownItem(
           "باز انجام",
@@ -25,7 +25,7 @@ export const EditTools: FC = () => {
           },
           {
             shortcut: "Shift+R",
-          }
+          },
         ),
       ]}
     />

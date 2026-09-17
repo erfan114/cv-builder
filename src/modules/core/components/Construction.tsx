@@ -11,11 +11,7 @@ export const UnderConstruction: FC = () => {
       <p className="text-sm">
         با عرض تاسف این صفحه در حال توسعه میباشد، لطفا بعدا دوباره تلاش کنید
       </p>
-      <Button
-        href={githubPath("/")}
-        variant="filled"
-        color="blue"
-      >
+      <Button href={githubPath("/")} variant="filled" color="blue">
         <span>بازگشت به صفحه اصلی</span>
       </Button>
     </div>

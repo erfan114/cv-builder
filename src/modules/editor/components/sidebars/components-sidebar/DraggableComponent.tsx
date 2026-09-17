@@ -13,7 +13,7 @@ export const DraggableComponent: FC<DraggableComponentProps> = ({ id }) => {
   const { attributes, listeners, setNodeRef, transform, active } = useDraggable(
     {
       id,
-    }
+    },
   );
 
   const thisIsActive = active?.id === id;
@@ -32,7 +32,7 @@ export const DraggableComponent: FC<DraggableComponentProps> = ({ id }) => {
       {...attributes}
       className={cn(
         "h-12 flex items-center justify-center border rounded bg-white",
-        thisIsActive && "opacity-50"
+        thisIsActive && "opacity-50",
       )}
       aria-describedby={id}
     >

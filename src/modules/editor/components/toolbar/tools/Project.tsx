@@ -21,7 +21,7 @@ export const ProjectTools: FC = () => {
           },
           {
             shortcut: "Shift+O",
-          }
+          },
         ),
         buttonDropdownItem("پروژه های اخیر", "recent-projects", () => {}),
         dividerDropdownItem(),
@@ -33,7 +33,7 @@ export const ProjectTools: FC = () => {
           },
           {
             shortcut: "Shift+S",
-          }
+          },
         ),
         buttonDropdownItem(
           "ذخیره به عنوان ...",
@@ -43,7 +43,7 @@ export const ProjectTools: FC = () => {
           },
           {
             shortcut: "Shift+A+S",
-          }
+          },
         ),
         dividerDropdownItem(),
         toggleDropdownItem("ذخیره سازی خودکار", "autosave", false, () => {}),
@@ -56,7 +56,7 @@ export const ProjectTools: FC = () => {
           },
           {
             shortcut: "Shift+K",
-          }
+          },
         ),
         buttonDropdownItem("بازگشت به خانه", "home", () => {}),
       ]}

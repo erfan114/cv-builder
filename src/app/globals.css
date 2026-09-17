@@ -10,7 +10,6 @@ html {
   scrollbar-color: #eaeaea transparent;
 }
 
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -20,11 +19,11 @@ html {
 
 @layer base {
   * {
-    @apply border-slate-200 font-sans
+    @apply border-slate-200 font-sans;
   }
 
   code {
-    @apply font-mono
+    @apply font-mono;
   }
 }
 
