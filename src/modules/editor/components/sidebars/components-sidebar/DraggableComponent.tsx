@@ -5,9 +5,9 @@ import { useDraggable } from "@dnd-kit/core";
 import { Combine } from "lucide-react";
 import { FC } from "react";
 
-export interface DraggableComponentProps {
+export type DraggableComponentProps = {
   id: string;
-}
+};
 
 export const DraggableComponent: FC<DraggableComponentProps> = ({ id }) => {
   const { attributes, listeners, setNodeRef, transform, active } = useDraggable(
