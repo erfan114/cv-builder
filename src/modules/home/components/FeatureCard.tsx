@@ -1,11 +1,11 @@
 import { cn } from "@/modules/ui/helpers/cn.helper";
-import { LucideIconType } from "@/modules/ui/types";
+import { LucideIcon } from "lucide-react";
 import { FC, ReactNode } from "react";
 
 interface FeatureCardProps {
   title: ReactNode;
   description: ReactNode;
-  icon: LucideIconType;
+  icon: LucideIcon;
   wide?: boolean;
   invert?: boolean;
 }
