@@ -3,20 +3,20 @@ import { ItemType } from "antd/es/menu/interface";
 import { Check } from "lucide-react";
 import { FC, PropsWithChildren } from "react";
 
-export interface DropdownItemOptions {
+export type DropdownItemOptions = {
   shortcut?: string;
   keepOpen?: boolean;
-}
+};
 
 export type DropdownItemType = {
   interact?: () => void;
   options?: DropdownItemOptions;
 } & ItemType;
 
-export interface DropdownLabelItemProps extends PropsWithChildren {
+export type DropdownLabelItemProps = PropsWithChildren & {
   checked?: boolean;
   shortcut?: string;
-}
+};
 
 export const DropdownItemLabel: FC<DropdownLabelItemProps> = ({
   children,
