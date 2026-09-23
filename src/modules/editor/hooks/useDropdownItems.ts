@@ -12,15 +12,25 @@ export const useDropdownItems = (items: DropdownItemType[]) => {
 
     for (const { interact, options, ...rest } of items) {
       normalizedItems.push(rest);
-      if (!rest.key) continue;
+
+      if (!rest.key) {
+        continue;
+      }
+
       const key = rest.key.toString();
 
       keepOpenMap[key] = options?.keepOpen ?? false;
 
-      if (!interact) continue;
+      if (!interact) {
+        continue;
+      }
+
       handlerMap[key] = interact;
 
-      if (!options?.shortcut) continue;
+      if (!options?.shortcut) {
+        continue;
+      }
+
       keyMap[key] = options.shortcut;
       keyHandlers[key] = interact;
     }
