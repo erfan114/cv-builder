@@ -10,16 +10,12 @@ import { cn } from "@/modules/ui/helpers/cn.helper";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import { ConfigProvider } from "antd";
 import type { Metadata } from "next";
-import { Suspense } from "react";
+import { PropsWithChildren, Suspense } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = layoutMetadata();
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
   return (
     <html lang="en" dir="rtl">
       <body
