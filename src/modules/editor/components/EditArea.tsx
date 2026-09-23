@@ -19,24 +19,6 @@ import "@xyflow/react/dist/style.css";
 import { FC, useCallback, useState } from "react";
 import { PageNode } from "./nodes/PageNode";
 
-/* 
-  Page -> Container -> Component
-*/
-
-/* 
-  Page
-  Properties:
-  - Background color
-  - Color
-  - Children
-*/
-
-/* 
-  Container
-  Properties:
-  - Children
-*/
-
 const nodeTypes = {
   page: PageNode,
 };
