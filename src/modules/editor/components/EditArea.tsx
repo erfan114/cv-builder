@@ -1,5 +1,6 @@
 "use client";
 
+import { FC, useCallback, useState } from "react";
 import { useDroppable } from "@dnd-kit/core";
 import {
   addEdge,
@@ -16,7 +17,6 @@ import {
   ReactFlow,
 } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
-import { FC, useCallback, useState } from "react";
 import { PageNode } from "./nodes/PageNode";
 
 const nodeTypes = {

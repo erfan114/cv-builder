@@ -1,3 +1,5 @@
+import { Splitter } from "antd";
+import { Metadata } from "next";
 import { pageMetadata } from "@/modules/core/helpers/metadata.helper";
 import { DragAndDropContext } from "@/modules/editor/components/DragAndDropContext";
 import { DragAndDropOverlay } from "@/modules/editor/components/DragAndDropOverlay";
@@ -6,8 +8,6 @@ import { EditorComponentsSidebar } from "@/modules/editor/components/sidebars/co
 import { EditorPropertiesSidebar } from "@/modules/editor/components/sidebars/properties-sidebar";
 import { ToolBar } from "@/modules/editor/components/toolbar";
 import { ReactFlowProvider } from "@xyflow/react";
-import { Splitter } from "antd";
-import { Metadata } from "next";
 
 export const metadata: Metadata = pageMetadata("Editor");
 

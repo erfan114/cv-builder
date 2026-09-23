@@ -1,6 +1,6 @@
+import { FC } from "react";
 import { useDroppable } from "@dnd-kit/core";
 import { NodeProps } from "@xyflow/react";
-import { FC } from "react";
 
 export const PageNode: FC<NodeProps> = ({ data }) => {
   const label = data.label as string | undefined;

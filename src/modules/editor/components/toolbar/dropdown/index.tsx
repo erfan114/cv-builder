@@ -1,7 +1,7 @@
-import { useDropdownItems } from "@/modules/editor/hooks/useDropdownItems";
 import { Button, Dropdown, DropdownProps, MenuProps } from "antd";
 import { FC, useState } from "react";
 import { GlobalHotKeys } from "react-hotkeys";
+import { useDropdownItems } from "@/modules/editor/hooks/useDropdownItems";
 import { DropdownItemType } from "./item";
 
 export type ToolbarDropdownProps = {

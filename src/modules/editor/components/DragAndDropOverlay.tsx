@@ -1,7 +1,7 @@
 "use client";
 
-import { DragOverlay, useDndMonitor } from "@dnd-kit/core";
 import { FC, useState } from "react";
+import { DragOverlay, useDndMonitor } from "@dnd-kit/core";
 import { DraggableComponent } from "./sidebars/components-sidebar/DraggableComponent";
 
 export const DragAndDropOverlay: FC = () => {

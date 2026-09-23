@@ -1,7 +1,7 @@
-import { githubPath } from "@/modules/core/helpers/github.helper";
 import { Button } from "antd";
 import { Combine } from "lucide-react";
 import { FC } from "react";
+import { githubPath } from "@/modules/core/helpers/github.helper";
 
 export const HomeHero: FC = () => {
   return (

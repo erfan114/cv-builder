@@ -1,8 +1,8 @@
 "use client";
 
+import { FC, PropsWithChildren } from "react";
 import { DndContext, DragEndEvent } from "@dnd-kit/core";
 import { useViewport } from "@xyflow/react";
-import { FC, PropsWithChildren } from "react";
 
 export const DragAndDropContext: FC<PropsWithChildren> = ({ children }) => {
   const { x, y } = useViewport();

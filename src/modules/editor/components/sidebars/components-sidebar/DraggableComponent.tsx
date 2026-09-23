@@ -1,9 +1,9 @@
 "use client";
 
-import { cn } from "@/modules/ui/helpers/cn.helper";
-import { useDraggable } from "@dnd-kit/core";
 import { Combine } from "lucide-react";
 import { FC } from "react";
+import { cn } from "@/modules/ui/helpers/cn.helper";
+import { useDraggable } from "@dnd-kit/core";
 
 export type DraggableComponentProps = {
   id: string;

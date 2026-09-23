@@ -1,6 +1,6 @@
-import { cn } from "@/modules/ui/helpers/cn.helper";
 import { LucideIcon } from "lucide-react";
 import { FC, ReactNode } from "react";
+import { cn } from "@/modules/ui/helpers/cn.helper";
 
 type FeatureCardProps = {
   title: ReactNode;
